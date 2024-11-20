@@ -23,7 +23,7 @@ def load_zillow_data(rent_csv):
 df = load_zillow_data('City_zori_uc_sfrcondomfr_sm_month.csv')
 
 cities = sorted(df.columns)
-selected_cities = st.sidebar.multiselect('Select Cities', cities, ['New York', 'Los Angeles', 'Chicago'])
+selected_cities = st.sidebar.multiselect('Select Cities', cities, ['New York', 'San Francisco', 'Miami', 'Austin'])
 
 dates = df.index
 start_date = st.sidebar.selectbox('Select Start Date', dates, index=0)
